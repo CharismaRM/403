@@ -199,6 +199,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
 }
 
 .denied__main-title {
@@ -256,6 +257,10 @@ body {
   /* 24px */
 }
 
+.denied__image {
+  z-index: 1;
+}
+
 .denied__image img {
   width: 100%;
 }
@@ -264,6 +269,7 @@ body {
   width: 1440px;
   max-width: calc(100vw - 20px);
   margin: 0px auto;
+  padding-bottom: 60px;
   overflow: hidden;
   position: relative;
 }
@@ -448,6 +454,11 @@ body {
     top: -29px;
     -webkit-clip-path: polygon(5.2083333333% 0%, 94.7916666667% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(5.2083333333% 0%, 94.7916666667% 0%, 100% 100%, 0% 100%);
+  }
+
+  .shild__bg::before {
+    top: 20%;
+    left: -100.636px;
   }
 }
 
